@@ -17,10 +17,7 @@ int josephus(int n, int k)
 
 int main()
 {
-
     int n,k,m,c,g,f,e,flg,dif,idx;
-
-//  q[1]=2;
     for(int i=1; i<=32767; i++)
     {
         dif=0;
@@ -29,9 +26,6 @@ int main()
         n=i;
         while(1)
         {
-
-
-
             if(a[n]==0)
             {
                 idx=josephus(n, c);
@@ -41,7 +35,7 @@ int main()
                 idx=a[n];
 
 
-            if(idx==1)
+           if(idx==1)
             {
                 dif=dif+n+1;
                 q[i]=dif;
@@ -63,18 +57,13 @@ int main()
                 n=idx;
             }
 
-
-
-
         }
     }
-
 
     while((cin>>n))
     {
         if(n!=0)
             cout<<q[n]<<"\n";
-
 
     }
     return 0;
